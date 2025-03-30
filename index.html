@@ -27,6 +27,7 @@
         </header>
         <main class="main">
             <form class="main__form">
+                <!-- Step 1 START -->
                 <div class="form__content content-active">
                     <header class="form__header">
                         <h1 class="form__header-title">Personal Info</h1>
@@ -36,10 +37,38 @@
                         <input type="text" placeholder="Name:" required>
                         <input type="email" placeholder="Email:" required>
                         <input type="tel" placeholder="Phone: +38" required>
-                        <button class="form__button">Next</button>
+                        <button class="form__button" id="btn-1">NEXT</button>
+                    </div>
+                </div>
+                <!-- Step 2 START -->
+                <div class="form__content">
+                    <header class="form__header">
+                        <h1 class="form__header-title">User Info</h1>
+                        <p class="form__header-text">Type your login data.</p>
+                    </header>
+                    <div class="form__inputs">
+                        <input type="text" placeholder="Login:" required>
+                        <input type="password" placeholder="Password:" required>
+                        <input type="password" placeholder="Confirm Password:" required>
+                        <button class="form__button" id="btn-2-prev">PREVIOUS</button>
+                        <button class="form__button" id="btn-2-next">NEXT</button>
+                    </div>
+                </div>
+                <!-- Step 3 START -->
+                <div class="form__content">
+                    <header class="form__header">
+                        <h1 class="form__header-title">Company Info</h1>
+                        <p class="form__header-text">Tell us more about your company.</p>
+                    </header>
+                    <div class="form__inputs">
+                        <input type="text" placeholder="Company Name:" required>
+                        <input type="text" placeholder="Job title:" required>
+                        <input type="text" placeholder="Location:" required>
+                        <button class="form__button" id="btn-3">SUBMIT</button>
                     </div>
                 </div>
             </form>
+            <div class="main__message"></div>
         </main>
     </div>
     <script src="./scripts/index.js"></script>
