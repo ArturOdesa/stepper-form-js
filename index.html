@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <title>Stepper Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="step-1 step-active">
+                <p>Step 1</p>
+            </div>
+            <div class="step-2">
+                <p>Step 2</p>
+            </div>
+            <div class="step-3">
+                <p>Step 3</p>
+            </div>
+            <div class="step-4">
+                <p>Finish</p>
+            </div>
+        </header>
+        <main class="main">
+            <form class="main__form">
+                <div class="form__content content-active">
+                    <header class="form__header">
+                        <h1 class="form__header-title">Personal Info</h1>
+                        <p class="form__header-text">Tell us more about you.</p>
+                    </header>
+                    <div class="form__inputs">
+                        <input type="text" placeholder="Name:" required>
+                        <input type="email" placeholder="Email:" required>
+                        <input type="tel" placeholder="Phone: +38" required>
+                        <button class="form__button">Next</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
