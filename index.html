@@ -10,67 +10,59 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="step-1 step-active">
-                <p>Step 1</p>
+    <main>
+        <div class="stepper">
+            <div class="step--1 step-active">Step 1</div>
+            <div class="step--2">Step 2</div>
+            <div class="step--3">Step 3</div>
+            <div class="step--4">Finish</div>
+        </div>
+        <form class="form form-active">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    Personal Info
+                </h1>
+                <p class="form--header-text">
+                    Tell us more about you.
+                </p>
             </div>
-            <div class="step-2">
-                <p>Step 2</p>
+            <input type="text" placeholder="Name" name="name"/>
+            <input type="text" placeholder="Email" name="email"/>
+            <input type="tel" placeholder="Phone" name="phone"/>
+            <button class="form__btn" id="btn-1">Next</button>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    Account Info
+                </h1>
+                <p class="form--header-text">
+                    Type your account details.
+                </p>
             </div>
-            <div class="step-3">
-                <p>Step 3</p>
+
+            <input type="text" placeholder="Login" name="login"/>
+            <input type="password" placeholder="Password" name="password"/>
+            <input type="password" placeholder="Confirm Password" name="passwordConfirm"/>
+            <button class="form__btn" id="btn-2-prev">Previous</button>
+            <button class="form__btn" id="btn-2-next">Next</button>
+        </form>
+        <form class="form">
+            <div class="form--header-container">
+                <h1 class="form--header-title">
+                    Company Info
+                </h1>
+                <p class="form--header-text">
+                    Tell us more about your company.
+                </p>
             </div>
-            <div class="step-4">
-                <p>Finish</p>
-            </div>
-        </header>
-        <main class="main">
-            <form class="main__form">
-                <!-- Step 1 START -->
-                <div class="form__content content-active">
-                    <header class="form__header">
-                        <h1 class="form__header-title">Personal Info</h1>
-                        <p class="form__header-text">Tell us more about you.</p>
-                    </header>
-                    <div class="form__inputs">
-                        <input type="text" placeholder="Name:" required>
-                        <input type="email" placeholder="Email:" required>
-                        <input type="tel" placeholder="Phone: +38" required>
-                        <button class="form__button" id="btn-1">NEXT</button>
-                    </div>
-                </div>
-                <!-- Step 2 START -->
-                <div class="form__content">
-                    <header class="form__header">
-                        <h1 class="form__header-title">User Info</h1>
-                        <p class="form__header-text">Type your login data.</p>
-                    </header>
-                    <div class="form__inputs">
-                        <input type="text" placeholder="Login:" required>
-                        <input type="password" placeholder="Password:" required>
-                        <input type="password" placeholder="Confirm Password:" required>
-                        <button class="form__button" id="btn-2-prev">PREVIOUS</button>
-                        <button class="form__button" id="btn-2-next">NEXT</button>
-                    </div>
-                </div>
-                <!-- Step 3 START -->
-                <div class="form__content">
-                    <header class="form__header">
-                        <h1 class="form__header-title">Company Info</h1>
-                        <p class="form__header-text">Tell us more about your company.</p>
-                    </header>
-                    <div class="form__inputs">
-                        <input type="text" placeholder="Company Name:" required>
-                        <input type="text" placeholder="Job title:" required>
-                        <input type="text" placeholder="Location:" required>
-                        <button class="form__button" id="btn-3">SUBMIT</button>
-                    </div>
-                </div>
-            </form>
-            <div class="main__message"></div>
-        </main>
-    </div>
+            <input type="text" placeholder="Company" name="company"/>
+            <input type="text" placeholder="Job title" name="job"/>
+            <input type="text" placeholder="Location" name="location"/>
+            <button class="form__btn" id="btn-3">Submit</button>
+        </form>
+        <div class="form--message"></div>
+    </main>
     <script src="./scripts/index.js"></script>
 </body>
 
